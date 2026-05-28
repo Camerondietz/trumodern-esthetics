@@ -13,8 +13,8 @@
   --tan:        #d4b896;
   --tan-deep:   #b89971;
   --tan-soft:   #e8dcc7;
-  --gold:       #c9a253;
-  --gold-deep:  #a88536;
+  --gold:       #a52f2f;
+  --gold-deep:  #7e1f1f;
   --line:       rgba(15, 14, 13, 0.10);
   --line-light: rgba(255,255,255,0.18);
   --muted:      #6b6457;
@@ -89,7 +89,7 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; letter-spacing: -0.01em; }
   margin: 0 0 18px;
   font-weight: 500;
 }
-.eyebrow--light { color: var(--tan); }
+.eyebrow--light { color: var(--cream-2); }
 
 /* ---------- Buttons ---------- */
 .btn {
@@ -111,7 +111,7 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; letter-spacing: -0.01em; }
 }
 .btn:hover { transform: translateY(-2px); }
 .btn--lg { padding: 17px 32px; font-size: 0.86rem; }
-.btn--gold { background: var(--gold); color: var(--ink); }
+.btn--gold { background: var(--gold); color: var(--cream); }
 .btn--gold:hover { background: var(--gold-deep); color: var(--cream); box-shadow: var(--shadow-md); }
 .btn--dark { background: var(--ink); color: var(--cream); }
 .btn--dark:hover { background: var(--ink-2); color: #fff; box-shadow: var(--shadow-md); }
