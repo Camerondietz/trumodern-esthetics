@@ -822,8 +822,8 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; letter-spacing: -0.01em; }
 /* ---------- CONTACT ---------- */
 .contact {
   background:
-    linear-gradient(180deg, rgba(15,14,13,0.85), rgba(15,14,13,0.85)),
-    url("https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat;
+    linear-gradient(180deg, rgba(15,14,13,0.25), rgba(15,14,13,0.25)),
+    url("../media/items.jpg") center/cover no-repeat;
   color: var(--cream);
 }
 .contact__inner {
@@ -841,6 +841,47 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; letter-spacing: -0.01em; }
   display: flex; flex-wrap: wrap; gap: 14px; justify-content: center;
 }
 
+.contact__location {
+  margin-top: 56px;
+  padding: 28px 32px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.14);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: var(--radius-lg);
+  display: flex; align-items: center; gap: 22px;
+  flex-wrap: wrap; justify-content: center;
+  text-align: left;
+  max-width: 620px;
+  margin-left: auto; margin-right: auto;
+}
+.contact__location-icon {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--gold);
+  color: var(--ink);
+  flex-shrink: 0;
+}
+.contact__location-icon svg { width: 22px; height: 22px; }
+.contact__address {
+  font-style: normal;
+  color: var(--cream);
+  font-size: 0.98rem;
+  line-height: 1.5;
+  flex: 1;
+  min-width: 200px;
+}
+.contact__address-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 1000;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  /* color: var(--gold); */
+  margin-bottom: 6px;
+}
+
 /* ---------- FOOTER ---------- */
 .footer {
   background: var(--ink);
@@ -856,6 +897,24 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; letter-spacing: -0.01em; }
 }
 .footer__brand .nav__brand { color: var(--cream); }
 .footer__brand p { margin-top: 12px; max-width: 280px; color: rgba(250,246,239,0.6); font-size: 0.95rem; }
+.footer__address {
+  font-style: normal;
+  margin-top: 18px;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: rgba(250,246,239,0.7);
+  max-width: 280px;
+}
+.footer__address a {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--gold);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: color .25s var(--ease);
+}
+.footer__address a:hover { color: var(--cream); }
 .footer h4 {
   font-family: var(--sans);
   font-size: 0.78rem;
